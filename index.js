@@ -36,9 +36,13 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+
+function sayGoodbye(user) {
+  return `Goodbye, ${user}. Have a great day.`
 }
+
+console.log('CHALLENGE sayGoodbye:')
+console.log(sayGoodbye('Samantha'));
 
 /**
  * ### Challenge `temperatureCtoF`
