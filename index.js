@@ -81,9 +81,17 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(num, unit) {
+  if (unit === 'C') {
+    return temperatureCtoF(num) + 'F';
+  } else if (unit === 'F') {
+    return num + unit;
+  } else {
+    return 'please enter F or C as a unit.'
+  }
 }
+console.log('CHALLENGE temperatureInF:');
+console.log(temperatureInF(24, 'C'));
 
 
 /**
