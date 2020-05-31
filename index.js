@@ -312,10 +312,15 @@ console.log(getModelYears(inventory));
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(arr, id) {
+  for (i in arr) {
+    if (arr[i].id === id) {
+      return `This is the ${arr[i].car_make} ${arr[i].car_model}`;
+    } 
+  }
 }
-
+console.log('STRETCH getCarInfoById:');
+console.log(getCarInfoById(inventory, 3));
 /**
  * ### Challenge `getOlderCars`
  * * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
